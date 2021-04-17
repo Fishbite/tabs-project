@@ -1,0 +1,4 @@
+# tabs-project
+A project that takes advantage of 'event bubbling'. An event listener is created on a parent object so that we can see which child element has been clicked. We are using  event.target rather than event.currentTarget; which would only return the parent object when any child element was clicked. Here we are listening for a child element that has a dataset attribute before we do something. If the element has the specific dataset attribute of "id" we simply remove the class of "active" from all elements with the "id" attribute before adding the class of "active" to the specific element that has been clicked.
+
+We then target (show/hide) the content by its' #id (getElementById) as the #id has the exact same name as the data-id (history, vision or goals) of the element that has been clicked.
